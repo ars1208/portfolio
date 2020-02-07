@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import page1 from '@/components/page1'
+import header from '@/components/header'
 import page2 from '@/components/page2'
 
 Vue.use(Router)
@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: page1
+      component: header
     },
     {
       path: '/page2',
