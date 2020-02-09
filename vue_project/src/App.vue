@@ -1,5 +1,6 @@
 <template>
 <div>
+  <myheader></myheader>
   <p>
     {{msg}}
   </p>
@@ -8,7 +9,12 @@
 </template>
 
 <script>
+import myheader from './components/myheader'
+
 export default {
+  components: {
+    myheader
+  },
   data () {
     return {
       msg: 'Hello world'
