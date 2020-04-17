@@ -1,6 +1,6 @@
 <template>
 <div>
-  <myheader></myheader>
+  <main></main>
   <p>
     {{msg}}
   </p>
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import myheader from './components/myheader'
+import main from './components/main'
 
 export default {
   components: {
-    myheader
+    main
   },
   data () {
     return {
