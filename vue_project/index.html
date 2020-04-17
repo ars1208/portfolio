@@ -3,11 +3,27 @@
 
 <head>
   <meta charset="utf-8">
+  <title>My project Page</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style tyle="text/css">
-    body {margin: 0;}
+    body {
+      margin: 0;
+    }
   </style>
-  <title>My project Page</title>
+  <script type="text/javascript">
+    (function(l) {
+      if (l.search) {
+        var q = {};
+        l.search.slice(1).split('&').forEach(function(v) { // ?p=/fooの分解
+          var a = v.split('='); // 'p=/foo' となっているはずなので=で分割
+          q[a[0]] = a[1]; // {p: '/foo'} 形式に修正
+        });
+        if (q.p !== undefined) {
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + (q.p || '')); // https://hoge.com/fooへ遷移
+        }
+      }
+    }(window.location))
+  </script>
 </head>
 
 <body>
