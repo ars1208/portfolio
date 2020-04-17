@@ -1,19 +1,20 @@
 <template>
-  <div>
-    <header>
-      <div class="header-logo">
-        My logo
-      </div>
-      <nav class="header-list">
-        <ul>
-          <li><a href="#">Top</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+  <header>
+    <div class="header-list">
+      <nuxt-link v-scroll-to="'#top'" to>
+        Top
+      </nuxt-link>
+      <nuxt-link v-scroll-to="'#about'" to>
+        About
+      </nuxt-link>
+      <nuxt-link v-scroll-to="'#skills'" to>
+        Skills
+      </nuxt-link>
+      <nuxt-link v-scroll-to="'#contacts'" to>
+        Contacts
+      </nuxt-link>
+    </div>
+  </header>
 </template>
 
 <script>
@@ -21,45 +22,21 @@
 
 <style>
 header {
-  height: 70px;
-  width: 100%;
+  font-size: 20px;
+  border: solid #CCCCCC;
+  border-width: 1px 0;
+  margin-top: 10px;
+  padding: 10px 0;
+  text-align: center;
 }
 
-.header-logo {
+nuxt-link {
+  border-left: solid 1px #CCCCCC;
   display: inline-block;
-  float: left;
-  line-height: 70px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 250px;
 }
 
-.header-list {
-  float: right;
-  height: 70px;
+nuxt-link:first-child {
+  border-left: none;
 }
-
-.header-list ul {
-  list-style: none;
-  display: inline-block;
-  height: 70px;
-  margin: 0;
-  padding: 0;
-}
-
-.header-list li {
-  float: left;
-}
-
-.header-list a {
-  color: inherit;
-  display: block;
-  padding: 20px 40px;
-  margin: 3px 10px;
-  text-decoration: none;
-}
-
-.header-list a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 </style>
