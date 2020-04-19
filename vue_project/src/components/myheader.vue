@@ -39,4 +39,5 @@ nuxt-link {
 nuxt-link:first-child {
   border-left: none;
 }
+
 </style>
