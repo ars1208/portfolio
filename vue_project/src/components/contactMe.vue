@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="about">
-      <p>about</p>
+      <p>contacts</p>
     </div>
   </div>
 </template>
