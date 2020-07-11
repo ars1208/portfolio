@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="about">
+    <div class="skills">
       <p>skills</p>
     </div>
   </div>
 </template>
 
 <style>
-  #about p {
-    background-color: #00bf00;
+  .skills {
+    background-color: #00bfbb;
     height: 500px;
   }
 </style>

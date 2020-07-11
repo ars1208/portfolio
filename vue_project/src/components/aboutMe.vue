@@ -7,7 +7,7 @@
 </template>
 
 <style>
-  #about p {
+  .about {
     background-color: #00bf00;
     height: 500px;
   }

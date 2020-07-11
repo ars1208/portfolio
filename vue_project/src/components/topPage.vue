@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="top">
-      <p>top</p>
+      <h1>My Portfollio</h1>
     </div>
   </div>
 </template>
 
 <style>
-  p {
+  .top {
     background-color: #00bfff;
     height: 500px;
   }

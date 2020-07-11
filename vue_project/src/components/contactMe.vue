@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="about">
+    <div class="contact">
       <p>contacts</p>
     </div>
   </div>
 </template>
 
 <style>
-  #about p {
-    background-color: #00bf00;
+  .contact {
+    background-color: #ffbf00;
     height: 500px;
   }
 </style>
