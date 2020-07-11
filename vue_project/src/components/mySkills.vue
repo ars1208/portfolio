@@ -1,7 +1,12 @@
 <template>
   <div>
     <div class="skills">
-      <p>skills</p>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Ruby</li>
+        <li>Perl</li>
+      </ul>
     </div>
   </div>
 </template>
