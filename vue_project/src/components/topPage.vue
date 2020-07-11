@@ -8,7 +8,7 @@
 
 <style>
   .top {
-    background-color: #59ffa1;
+    background-image: linear-gradient(45deg, #59ffa1, #1b4d30);
     height: 500px;
   }
 </style>
