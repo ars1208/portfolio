@@ -8,7 +8,7 @@
 
 <style>
   .top {
-    background-color: #00bfff;
+    background-color: #59ffa1;
     height: 500px;
   }
 </style>
