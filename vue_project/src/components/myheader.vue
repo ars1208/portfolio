@@ -1,18 +1,18 @@
 <template>
   <header>
     <div class="header-list">
-      <nuxt-link v-scroll-to="'#top'" to>
+      <router-link to="/topPage">
         Top
-      </nuxt-link>
-      <nuxt-link v-scroll-to="'#about'" to>
+      </router-link>
+      <router-link to="/aboutMe">
         About
-      </nuxt-link>
-      <nuxt-link v-scroll-to="'#skills'" to>
+      </router-link>
+      <router-link to="/mySkills">
         Skills
-      </nuxt-link>
-      <nuxt-link v-scroll-to="'#contacts'" to>
+      </router-link>
+      <router-link to="/contactMe">
         Contacts
-      </nuxt-link>
+      </router-link>
     </div>
   </header>
 </template>
@@ -30,13 +30,13 @@ header {
   text-align: center;
 }
 
-nuxt-link {
+router-link {
   border-left: solid 1px #CCCCCC;
   display: inline-block;
   width: 250px;
 }
 
-nuxt-link:first-child {
+router-link:first-child {
   border-left: none;
 }
 
